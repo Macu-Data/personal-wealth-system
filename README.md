@@ -1,305 +1,302 @@
-# Personal Wealth System
+# 💰 Personal Wealth System
 
-> Personal project to transform a real-world financial control system into a simplified, scalable and intelligent personal wealth management application.
-
----
-
-## 📌 Project Overview
-
-This project starts from a personal financial control system developed and used since **2020**, originally built with **Excel and Power BI**.
-
-The existing system has been designed to represent my real financial situation with a high level of accounting and financial accuracy, including historical information, accounting classifications, assets, liabilities, results, expenses, liquidity and financial indicators.
-
-The long-term goal is to transform that system into a **simpler, more accessible and scalable software solution**, while preserving the financial logic and reliability of the original model.
-
-The project may eventually evolve from personal finance into a broader **personal wealth management / personal operating system**, including investments, time management, goals and AI-powered automation.
+> Proyecto personal para transformar un sistema real de control financiero en una herramienta simplificada, escalable e inteligente de gestión financiera y patrimonial.
 
 ---
 
-# 🎯 Main Goal
+## 📌 Descripción del proyecto
 
-Build a personal financial and wealth management system that combines:
+Este proyecto nace a partir de un sistema personal de control financiero desarrollado y utilizado desde **2020**, construido inicialmente con **Excel y Power BI**.
 
-* Financial control
-* Accounting logic
-* Personal wealth management
-* Investment tracking
-* Financial analysis
-* Projections
-* Alerts
-* Automation
-* Artificial intelligence
+El sistema original fue desarrollado buscando representar con la mayor fidelidad posible la realidad económica y financiera personal, utilizando una lógica basada en contabilidad, patrimonio, ingresos, gastos, activos, pasivos, resultados, liquidez e indicadores financieros.
 
-The first objective is **not to build a complete application immediately**.
+La idea es transformar progresivamente ese sistema en un **software propio**, manteniendo la lógica financiera desarrollada durante estos años pero simplificando su utilización y haciéndola más escalable.
 
-The first objective is:
-
-> **Reproduce the results of the existing Excel + Power BI financial system using Python and SQL.**
-
-The existing system will act as the reference model against which the new system will be validated.
+A largo plazo, el proyecto podría evolucionar desde un sistema de finanzas personales hacia una plataforma de **gestión patrimonial personal**, incorporando inversiones, proyecciones, objetivos, automatización e inteligencia artificial.
 
 ---
 
-# 🧠 Core Principle
+# 🎯 Objetivo principal
 
-## Data first. Logic second. Interface third. AI last.
+Construir progresivamente un sistema que permita integrar:
 
-The project will follow this general order:
+* Finanzas personales
+* Patrimonio
+* Inversiones
+* Análisis financiero
+* Proyecciones
+* Alertas
+* Automatizaciones
+* Inteligencia artificial
+
+El objetivo inicial **no es construir inmediatamente una aplicación completa**.
+
+La primera meta técnica es:
+
+> **Reproducir con Python y SQL los resultados del sistema actual de Excel + Power BI.**
+
+El sistema original será utilizado como **modelo de referencia y validación** durante la transición.
+
+---
+
+# 🧠 Principio central
+
+## Datos primero. Lógica después. Interfaz después. IA al final.
+
+Orden general previsto:
 
 ```text
-REAL DATA
-   ↓
-DATA MODEL
-   ↓
-FINANCIAL LOGIC
-   ↓
+DATOS REALES
+      ↓
+MODELO DE DATOS
+      ↓
+LÓGICA FINANCIERA
+      ↓
 PYTHON + SQL
-   ↓
-VALIDATION
-   ↓
+      ↓
+VALIDACIÓN
+      ↓
 BACKEND / API
-   ↓
-APPLICATION
-   ↓
-INVESTMENTS
-   ↓
-AI + AUTOMATION
-   ↓
-AGENTS
+      ↓
+APLICACIÓN
+      ↓
+INVERSIONES
+      ↓
+IA + AUTOMATIZACIÓN
+      ↓
+AGENTES
 ```
 
-The project should not prioritize visual design before financial correctness.
+La prioridad será siempre la **exactitud y confiabilidad de los datos y cálculos** antes que la estética de la aplicación.
 
 ---
 
-# 🏦 Current Financial System
+# 🏦 Sistema financiero actual
 
-The original financial model is based mainly on:
+El sistema original está construido principalmente con:
 
 * Excel
 * Power BI
-* Accounting logic
-* Historical financial records since 2020
+* Lógica contable
+* Modelo financiero propio
+* Datos históricos desde 2020
 
-The Power BI model currently uses a fact table and chart-of-accounts structure, with classifications for assets, liabilities, equity, results and account rubrics.
+El modelo utiliza estructuras de cuentas, clasificaciones contables, activos, pasivos, patrimonio, resultados y diferentes indicadores financieros.
 
-The original system will remain available as a **reference and validation environment** during development.
+El sistema actual continuará funcionando como **referencia** mientras se desarrolla la nueva versión.
 
-### Validation principle
+### Principio de validación
 
-The new system should progressively reproduce:
+El nuevo sistema deberá progresivamente reproducir los resultados del modelo actual:
 
 ```text
-Power BI Result
+Resultado Power BI
         =
-Python / SQL Result
+Resultado Python / SQL
 ```
 
-Examples:
+Algunas de las métricas que deberán poder validarse:
 
 ```text
-Total Assets
-Total Liabilities
-Net Worth
-Income
-Expenses
-Period Result
-Cash / Liquidity
-Coverage Months
-Investment Cost
-Investment Value
-Portfolio Return
+Total Activo
+Total Pasivo
+Patrimonio Neto
+Ingresos
+Gastos
+Resultado
+Liquidez
+Meses de cobertura
+Evolución patrimonial
+Coste de inversiones
+Valor de inversiones
+Rentabilidad
+Distribución de cartera
 ```
 
-Differences must be investigated before considering the new calculation correct.
+Cualquier diferencia entre ambos sistemas deberá ser investigada antes de considerar correcto el nuevo cálculo.
 
 ---
 
-# 💰 Potential Financial Module
+# 💰 Módulo de finanzas
 
-The first version may include:
+Primera gran área del proyecto.
 
-### Income
+### Ingresos
 
-* Monthly income
-* Income categories
-* Historical evolution
-* Trends
+* Ingresos mensuales
+* Clasificación
+* Evolución histórica
+* Tendencias
 
-### Expenses
+### Gastos
 
-* Essential expenses
-* Non-essential expenses
-* Administrative expenses
-* Commercial expenses
-* Expense concentration
-* Top expenses
-* Monthly evolution
-* Alerts
+* Gastos esenciales
+* Gastos no esenciales
+* Gastos administrativos
+* Gastos comerciales
+* Concentración de gastos
+* Top de gastos
+* Evolución mensual
+* Alertas
 
-### Wealth / Net Worth
+### Patrimonio
 
-* Assets
-* Liabilities
-* Net worth
-* Accumulated results
-* Historical evolution
-* Variation versus previous periods
+* Activos
+* Pasivos
+* Patrimonio Neto
+* Resultados acumulados
+* Evolución histórica
+* Variación respecto a períodos anteriores
 
-### Liquidity
+### Liquidez
 
-* Available funds
-* Monthly average expenses
-* Months of coverage
-* Liquidity alerts
+* Dinero disponible
+* Gasto promedio mensual
+* Meses de cobertura
+* Alertas de liquidez
 
-### Results
+### Resultados
 
-* Monthly result
-* 12-month result
-* Dynamic analysis periods
-* Historical evolution
+* Resultado mensual
+* Resultado de 12 meses
+* Períodos de análisis
+* Evolución histórica
 
-### Projections
+### Proyecciones
 
-* Future income
-* Future expenses
-* Savings capacity
-* Scenario analysis
-* Long-term financial projections
+* Evolución esperada de ingresos
+* Evolución esperada de gastos
+* Capacidad de ahorro
+* Escenarios
+* Proyecciones financieras de largo plazo
 
 ---
 
-# 📈 Future Investment Module
+# 📈 Módulo de inversiones
 
-A second major module will integrate investment management.
+Segunda gran área del proyecto.
 
-The initial focus will be on **Interactive Brokers (IBKR)**.
+El primer broker considerado será:
 
-Potential functionality:
+**Interactive Brokers (IBKR)**
 
-* Transactions
-* Deposits
-* Withdrawals
-* Buys
-* Sells
-* Dividends
-* Taxes / withholding
-* Cost basis
-* Current value
-* Portfolio allocation
-* Returns
-* Volatility
-* Maximum drawdown
-* Sharpe ratio
-* Concentration
-* Risk analysis
-* Investment contributions
-* Portfolio evolution
+Posibles funcionalidades:
 
-Eventually:
+* Depósitos
+* Retiros
+* Compras
+* Ventas
+* Dividendos
+* Retenciones
+* Operaciones
+* Coste de adquisición
+* Valor actual
+* Rentabilidad
+* Distribución de cartera
+* Concentración
+* Volatilidad
+* Máximo Drawdown
+* Sharpe Ratio
+* Evolución de aportaciones
+* Evolución patrimonial
+
+Conceptualmente:
 
 ```text
-PERSONAL FINANCES
+FINANZAS PERSONALES
         +
-INVESTMENTS
+INVERSIONES
         ↓
-TOTAL WEALTH
+PATRIMONIO TOTAL
 ```
 
-The objective is to view personal finances and investments as interconnected parts of the same wealth system.
+El objetivo será tratar ambos componentes como partes de un mismo sistema de gestión patrimonial.
 
 ---
 
-# 🤖 Future AI & Automation Module
+# 🤖 Módulo de inteligencia artificial
 
-AI will not be introduced before the underlying data and calculations are reliable.
+La inteligencia artificial será incorporada **después de construir una base de datos y un motor financiero confiables**.
 
-Potential future capabilities:
+Algunas posibilidades futuras:
 
-### Financial assistant
+### Asistente financiero
 
-Example:
+Ejemplo:
 
-> Why did my net worth change this month?
+> ¿Por qué cambió mi patrimonio este mes?
 
-The system could:
-
-```text
-1. Query financial data
-2. Calculate the relevant indicators
-3. Compare against previous periods
-4. Identify the main changes
-5. Generate a natural-language explanation
-```
-
-### Automated analysis
-
-Potential workflow:
+El sistema podría:
 
 ```text
-IBKR / Financial Data
-        ↓
-Python
-        ↓
-Database
-        ↓
-Financial calculations
-        ↓
-Alerts / analysis
-        ↓
-AI
-        ↓
-Report / notification
+1. Consultar los datos
+2. Calcular indicadores
+3. Comparar períodos
+4. Detectar cambios relevantes
+5. Identificar los principales factores
+6. Generar una explicación
 ```
 
-### Long-term goal
+### Automatización
 
-An intelligent assistant capable of answering questions about the user's financial situation using structured financial data and predefined calculations.
+Posible flujo:
+
+```text
+IBKR / Datos financieros
+          ↓
+        Python
+          ↓
+       Base SQL
+          ↓
+Cálculos financieros
+          ↓
+ Alertas / análisis
+          ↓
+          IA
+          ↓
+ Informe / notificación
+```
 
 ---
 
-# 🧩 Long-Term Vision
+# 🧩 Visión de largo plazo
 
-The project may eventually expand into a broader personal management system.
-
-Possible modules:
+El proyecto podría evolucionar hacia un sistema personal más amplio:
 
 ```text
-                   PERSONAL SYSTEM
-                          │
-        ┌─────────────────┼─────────────────┐
-        ↓                 ↓                 ↓
-    FINANCES          INVESTMENTS        TIME
-        │                 │                 │
-        ↓                 ↓                 ↓
-    WEALTH           PORTFOLIO           PRODUCTIVITY
-        │                 │                 │
-        └─────────────────┼─────────────────┘
-                          ↓
-                       GOALS
-                          ↓
-                         AI
+                     PERSONAL SYSTEM
+                           │
+          ┌────────────────┼────────────────┐
+          ↓                ↓                ↓
+      FINANZAS         INVERSIONES         TIEMPO
+          │                │                │
+          ↓                ↓                ↓
+      PATRIMONIO        CARTERA        PRODUCTIVIDAD
+          │                │                │
+          └────────────────┼────────────────┘
+                           ↓
+                         OBJETIVOS
+                           ↓
+                           IA
 ```
 
-Potential future areas:
+Posibles módulos futuros:
 
-* Time management
-* Personal goals
-* Productivity
-* Long-term planning
-* Financial independence
-* Automated personal reporting
-* AI assistant
-* Intelligent alerts
+* Gestión del tiempo
+* Productividad
+* Objetivos personales
+* Planificación
+* Proyecciones
+* Automatizaciones
+* Asistente personal mediante IA
 
-This is a long-term possibility, not part of the initial MVP.
+Estos módulos pertenecen a la **visión de largo plazo** y no al primer MVP.
 
 ---
 
-# 🛠️ Technology Roadmap
+# 🛠️ Tecnologías y orden de aprendizaje
 
-The expected learning and implementation order is:
+Orden orientativo:
 
 ```text
 1. Python
@@ -307,54 +304,50 @@ The expected learning and implementation order is:
 3. Git / GitHub
 4. Pandas
 5. PostgreSQL
-6. Financial project
+6. Proyecto financiero
 7. FastAPI / Backend
 8. Frontend
-9. Investment / IBKR integration
+9. Integración de inversiones / IBKR
 10. APIs
-11. AI / LLMs
-12. Automation
-13. AI Agents
+11. IA / LLM
+12. Automatización
+13. Agentes de IA
 ```
 
-The goal is not to master every technology before starting the project.
+La intención no es dominar una tecnología completamente antes de avanzar.
 
-Each technology should be learned and applied when the project requires it.
+La idea es:
+
+> **Aprender → aplicar → construir → probar → documentar → mejorar.**
 
 ---
 
-# 📚 Learning Roadmap
+# 📚 Roadmap de aprendizaje
 
-## Phase 1 — Python + SQL
+## Fase 1 — Python + SQL + Git
 
-Estimated duration:
+**Duración estimada: 0–3 meses**
 
-**0–3 months**
+Dedicación orientativa:
 
-Target study time:
-
-**7–10 hours per week**
+**7–10 horas por semana**
 
 ### Python
 
-Focus:
-
 * Variables
-* Data types
-* Lists
-* Dictionaries
-* Conditions
-* Loops
-* Functions
-* Modules
-* Exceptions
-* File handling
-* Virtual environments
-* Object-oriented programming basics
+* Tipos de datos
+* Listas
+* Diccionarios
+* Condiciones
+* Bucles
+* Funciones
+* Módulos
+* Manejo de errores
+* Archivos
+* Entornos virtuales
+* Programación orientada a objetos básica
 
 ### SQL
-
-Focus:
 
 * SELECT
 * WHERE
@@ -363,17 +356,15 @@ Focus:
 * CASE
 * JOIN
 * Subqueries
-* CTEs
-* Window functions
-* Aggregations
-* Date operations
+* CTE
+* Window Functions
+* Agregaciones
+* Fechas
 
 ### Git / GitHub
 
-Focus:
-
-* Repository
-* Commit
+* Repositorios
+* Commits
 * Push
 * Pull
 * Branches
@@ -381,22 +372,22 @@ Focus:
 * Pull Requests
 * Issues
 * Projects
+* Markdown
 * README
-* Git workflow
 
-### First practical project
+### Primer proyecto práctico
 
-Build a small:
+Construir un:
 
-> **Personal Expense Analyzer**
+> **Analizador de gastos personales**
 
-Input:
+Entrada:
 
 ```text
 CSV / Excel
 ```
 
-Processing:
+Procesamiento:
 
 ```text
 Python
@@ -404,40 +395,38 @@ Python
 Pandas
 ```
 
-Output:
+Resultados:
 
 ```text
-Income
-Expenses
-Categories
-Monthly evolution
-Top expenses
-Savings
+Ingresos
+Gastos
+Categorías
+Evolución mensual
+Top gastos
+Ahorro
 ```
 
 ---
 
-# Phase 2 — Pandas + Databases
+# Fase 2 — Pandas + PostgreSQL
 
-Estimated duration:
+**Duración estimada: meses 3–5**
 
-**Months 3–5**
+Objetivos:
 
-Focus:
-
-* Data cleaning
-* Data transformation
-* Dates
-* Grouping
-* Aggregations
-* Merge / Join
-* Time series
-* Data validation
-* Data quality
+* Limpieza de datos
+* Transformación
+* Fechas
+* Agrupaciones
+* Agregaciones
+* Merge
+* Series temporales
+* Validación
+* Calidad de datos
 * Pandas
 * PostgreSQL
 
-Target architecture:
+Arquitectura:
 
 ```text
 CSV / Excel
@@ -446,398 +435,372 @@ CSV / Excel
       ↓
     Pandas
       ↓
-  PostgreSQL
+ PostgreSQL
       ↓
-Financial calculations
+Lógica financiera
 ```
 
 ---
 
-# Phase 3 — Backend
+# Fase 3 — Backend
 
-Estimated duration:
+**Duración estimada: meses 5–8**
 
-**Months 5–8**
-
-Main technology candidate:
+Tecnología candidata:
 
 **FastAPI**
 
-Database:
+Base de datos:
 
 **PostgreSQL**
 
-Initial architecture:
+Arquitectura inicial:
 
 ```text
-USER
- ↓
+USUARIO
+   ↓
 FRONTEND
- ↓
+   ↓
 FASTAPI
- ↓
-BUSINESS LOGIC
- ↓
+   ↓
+LÓGICA DE NEGOCIO
+   ↓
 POSTGRESQL
 ```
 
-The backend should expose reliable financial calculations and data.
-
 ---
 
-# Phase 4 — Application
+# Fase 4 — Aplicación
 
-Estimated duration:
+**Duración estimada: meses 8–11**
 
-**Months 8–11**
-
-Potential technologies:
+Tecnologías posibles:
 
 * HTML
 * CSS
 * JavaScript
 * React
 
-Initial interface:
+Primera interfaz orientativa:
 
 ```text
 ┌──────────────────────────────────────┐
-│        FINANCIAL OVERVIEW            │
+│        SITUACIÓN FINANCIERA          │
 ├──────────┬──────────┬───────┬────────┤
-│ Net Worth│ Income   │Expenses│Result │
+│Patrimonio│Ingresos  │ Gastos│Resultado│
 ├──────────┴──────────┴───────┴────────┤
 │                                      │
-│       Net Worth Evolution            │
+│       Evolución del patrimonio       │
 │                                      │
 ├──────────────────┬───────────────────┤
-│ Asset Distribution│ Financial Alerts │
-│                  │                   │
+│ Distribución     │ Alertas            │
+│ de activos       │ financieras        │
 └──────────────────┴───────────────────┘
 ```
 
-Visual design should come after the financial engine is reliable.
+La estética será secundaria respecto de la lógica financiera.
 
 ---
 
-# Phase 5 — Investments
+# Fase 5 — Inversiones
 
-Estimated duration:
+**Duración estimada: meses 10–14**
 
-**Months 10–14**
+Incorporación del módulo de inversiones e integración con IBKR.
 
-Integrate investment data and portfolio analysis.
+Áreas iniciales:
 
-Initial broker:
-
-**Interactive Brokers**
-
-Potential areas:
-
-* Transactions
-* Portfolio
-* Contributions
-* Dividends
-* Cost basis
-* Performance
-* Risk
-* Allocation
-* Drawdown
-* Long-term projections
+* Operaciones
+* Cartera
+* Aportaciones
+* Dividendos
+* Coste
+* Valor
+* Rentabilidad
+* Riesgo
+* Distribución
+* Proyecciones
 
 ---
 
-# Phase 6 — AI
+# Fase 6 — Inteligencia artificial
 
-Estimated duration:
+**Etapa posterior al MVP**
 
-**After the core application is reliable**
+Temas a estudiar:
 
-Study:
-
-* LLM fundamentals
-* Prompt engineering
-* Structured outputs
-* Tool/function calling
+* LLM
+* Prompting
+* Structured Output
+* Tool / Function Calling
 * APIs
 * Embeddings
 * RAG
-* Evaluation
-* Context management
-* AI safety
-* Cost management
+* Evaluación
+* Gestión de contexto
+* Costes
+* Seguridad
 
-The AI layer should consume reliable functions and data rather than replace them.
-
----
-
-# Phase 7 — Automation & Agents
-
-Future stage.
-
-Potential architecture:
-
-```text
-DATA
- ↓
-DATABASE
- ↓
-FUNCTIONS / TOOLS
- ↓
-AI MODEL
- ↓
-AGENT
- ↓
-AUTOMATION
-```
-
-Example:
-
-> Analyze my finances over the last 12 months and identify unusual changes.
-
-The agent may eventually:
-
-```text
-→ Query SQL
-→ Calculate KPIs
-→ Compare periods
-→ Detect anomalies
-→ Analyze investments
-→ Generate a report
-→ Send a notification
-```
+La IA debe apoyarse sobre datos y funciones confiables.
 
 ---
 
-# ⏱️ Estimated Overall Timeline
+# Fase 7 — Automatización y agentes
 
-For a person who works and studies approximately **7–10 hours per week**:
+Etapa futura.
+
+Arquitectura aproximada:
+
+```text
+DATOS
+  ↓
+BASE DE DATOS
+  ↓
+FUNCIONES / HERRAMIENTAS
+  ↓
+MODELO DE IA
+  ↓
+AGENTE
+  ↓
+AUTOMATIZACIÓN
+```
+
+Ejemplo:
+
+> Analizar mis finanzas de los últimos 12 meses y detectar cambios importantes.
+
+Posible proceso:
+
+```text
+→ Consultar SQL
+→ Calcular KPIs
+→ Comparar períodos
+→ Detectar anomalías
+→ Analizar inversiones
+→ Generar informe
+→ Enviar notificación
+```
+
+---
+
+# ⏱️ Cronograma general estimado
+
+Para una persona que trabaja y estudia aproximadamente **7–10 horas semanales**:
 
 ```text
 2026
 ├── Python
 ├── SQL
 ├── Git / GitHub
-└── first small data projects
+└── Primeros proyectos de datos
 
 2027
 ├── Pandas
 ├── PostgreSQL
-├── Financial engine
+├── Motor financiero
 ├── FastAPI
 ├── Backend
-├── Initial application
-└── Investment module
+├── Aplicación inicial
+└── Módulo de inversiones
 
 2028+
 ├── APIs
-├── AI
-├── Automation
-├── Agents
-└── Potential product / monetization exploration
+├── IA
+├── Automatización
+├── Agentes
+└── Evaluación de monetización
 ```
 
-These dates are estimates, not deadlines.
+Las fechas son orientativas.
 
-Consistency matters more than speed.
+La prioridad es mantener una evolución sostenible y constante.
 
 ---
 
-# 💻 Hardware Direction
+# 💻 Hardware
 
-No high-end AI workstation is necessary at the beginning.
+No se necesita inicialmente una computadora especializada para IA.
 
-Recommended:
+### Mínimo recomendado
 
-### Minimum
-
-* Modern 6+ core CPU
+* CPU moderna de 6+ núcleos
 * 16 GB RAM
-* 512 GB SSD
+* SSD de 512 GB
 
-### Preferred
+### Preferido
 
-* Modern mid/high-range CPU
+* CPU moderna de gama media/alta
 * 32 GB RAM
-* 1 TB SSD
+* SSD de 1 TB
 
-A dedicated high-end GPU is not an initial priority because much of the future AI work can be performed through APIs and cloud services.
-
----
-
-# 🧱 Project Principles
-
-## 1. Accuracy before aesthetics
-
-Financial calculations must be correct before the interface becomes beautiful.
-
-## 2. Build while learning
-
-Do not spend months studying technologies without applying them.
-
-## 3. Small iterations
-
-Each feature should become a small, understandable piece of work.
-
-## 4. Validate against the original model
-
-The original Excel + Power BI system is the reference model during the transition.
-
-## 5. Keep an audit trail
-
-Important financial transformations and calculations should be traceable.
-
-## 6. Avoid unnecessary complexity
-
-Do not build infrastructure before it is required.
-
-## 7. Do not start with AI
-
-Reliable data and reliable functions come first.
-
-## 8. Keep the scope under control
-
-The project may eventually become very large.
-
-The first product remains:
-
-> **A reliable personal financial control system.**
+Una GPU de alta gama no es una prioridad inicial.
 
 ---
 
-# 📋 Development Strategy
+# 🧱 Principios del proyecto
 
-The project will evolve approximately like this:
+### 1. Exactitud antes que estética
+
+Los números deben ser correctos antes de diseñar una interfaz compleja.
+
+### 2. Aprender construyendo
+
+Cada etapa de aprendizaje debería generar algo tangible.
+
+### 3. Pequeñas iteraciones
+
+Evitar desarrollar grandes bloques sin validar.
+
+### 4. Validación contra el sistema original
+
+Excel + Power BI serán la referencia inicial.
+
+### 5. Trazabilidad
+
+Las transformaciones y cálculos relevantes deberán poder explicarse.
+
+### 6. Simplicidad
+
+No incorporar tecnologías o infraestructura innecesaria.
+
+### 7. No empezar por IA
+
+Primero datos y lógica.
+
+### 8. Controlar el alcance
+
+El proyecto puede crecer indefinidamente.
+
+El primer objetivo sigue siendo:
+
+> **Un sistema financiero confiable y útil.**
+
+---
+
+# 📋 Estrategia de desarrollo
 
 ```text
-ORIGINAL SYSTEM
+SISTEMA ORIGINAL
 Excel + Power BI
         ↓
-PYTHON + SQL REPRODUCTION
+PYTHON + SQL
         ↓
-FINANCIAL ENGINE
+REPRODUCCIÓN DEL MODELO
         ↓
-DATABASE
+MOTOR FINANCIERO
+        ↓
+BASE DE DATOS
         ↓
 BACKEND
         ↓
-MVP APPLICATION
+MVP
         ↓
-INVESTMENTS
+INVERSIONES
         ↓
-AI
+IA
         ↓
-AUTOMATION
+AUTOMATIZACIÓN
         ↓
-LONG-TERM PERSONAL SYSTEM
+SISTEMA PERSONAL MÁS AMPLIO
 ```
 
 ---
 
-# 🚫 What Not To Do
+# 📅 Inicio del proyecto
 
-Do not start by building:
+**Fecha de inicio:** 21/09/2026
 
-* A complete fintech platform
-* A mobile application
-* An AI agent
-* A complex authentication system
-* A huge cloud architecture
-* A sophisticated frontend
+### Estado inicial
 
-The first meaningful milestone is much simpler:
-
-> **Reproduce the existing financial system in Python + SQL with validated results.**
-
----
-
-# 📅 Project Start
-
-**Start date:** 21 September 2026
-
-### Initial status
-
-* [x] Financial system exists
-* [x] Historical data available since 2020
-* [x] Excel experience
-* [x] Power BI model
-* [x] Accounting / financial logic
-* [x] Basic SQL knowledge
-* [x] Basic Git / GitHub knowledge
-* [ ] Strengthen Python
-* [ ] Strengthen SQL
-* [ ] Learn Pandas
-* [ ] Build first Python financial project
-* [ ] Build SQL financial model
-* [ ] Validate against Power BI
-* [ ] Design application architecture
-* [ ] Build financial engine
-* [ ] Build backend
-* [ ] Build application
-* [ ] Integrate investments
-* [ ] Add AI
-* [ ] Add automation
-* [ ] Evaluate monetization
+* [x] Sistema financiero existente
+* [x] Datos históricos desde 2020
+* [x] Experiencia con Excel
+* [x] Experiencia con Power BI
+* [x] Modelo financiero y contable
+* [x] Base de SQL
+* [x] Base de Git / GitHub
+* [ ] Reforzar Python
+* [ ] Reforzar SQL
+* [ ] Aprender Pandas
+* [ ] Crear primer proyecto financiero en Python
+* [ ] Crear modelo financiero en SQL
+* [ ] Validar contra Power BI
+* [ ] Diseñar arquitectura
+* [ ] Crear motor financiero
+* [ ] Crear backend
+* [ ] Crear aplicación
+* [ ] Incorporar inversiones
+* [ ] Incorporar IA
+* [ ] Incorporar automatizaciones
+* [ ] Investigar agentes
+* [ ] Evaluar monetización
 
 ---
 
-# 📊 Progress Philosophy
+# 📈 Filosofía de progreso
 
-The objective is not:
+El objetivo no es simplemente:
 
-> "Finish a course."
+> "Terminar cursos."
 
-The objective is:
+El objetivo es:
 
-> **Create something functional while continuously increasing technical skill.**
+> **Convertir conocimiento en proyectos reales.**
 
-Every important learning milestone should ideally produce something tangible:
+Ciclo de aprendizaje:
 
 ```text
-Learn
- ↓
-Build
- ↓
-Test
- ↓
-Document
- ↓
-Commit
- ↓
-Improve
+APRENDER
+   ↓
+PRACTICAR
+   ↓
+CONSTRUIR
+   ↓
+PROBAR
+   ↓
+DOCUMENTAR
+   ↓
+COMMIT
+   ↓
+MEJORAR
 ```
 
 ---
 
-# 📝 Project Log
+# 📝 Registro del proyecto
 
-This section will be updated as the project evolves.
+## 21/09/2026
 
-### 2026-09-21
+Inicio oficial del proyecto.
 
-Project officially started.
+Se define como estrategia inicial:
 
-Initial direction:
+* Utilizar GitHub como centro principal del proyecto.
+* Mantener documentación, roadmap y aprendizaje separados del futuro código de la aplicación.
+* Reforzar Python y SQL antes de entrar en el desarrollo completo.
+* Utilizar el sistema Excel + Power BI como modelo de referencia.
+* Priorizar la exactitud financiera antes que la interfaz.
+* Construir progresivamente.
+* Mantener abierta la posibilidad de incorporar inversiones, automatización e inteligencia artificial.
 
-* Use GitHub as the main project knowledge base.
-* Keep a separate repository for the eventual application.
-* Strengthen Python and SQL first.
-* Use the existing financial system as the reference model.
-* Build progressively rather than attempting the complete product at once.
+### Primer objetivo práctico
+
+> **Reproducir una parte real del sistema financiero actual utilizando Python y SQL.**
 
 ---
 
-## 🚀 Current Focus
+# 🚀 Enfoque actual
 
 **Python + SQL + Git/GitHub**
 
-Next practical milestone:
+### Próximo hito
 
-> Build the first small financial-data project using Python and SQL.
+Crear el primer pequeño proyecto de análisis de datos financieros utilizando Python y SQL.
 
 ---
 
-## ⚠️ Important Note
+## ⚠️ Nota
 
-This is a personal development and software project.
+Este proyecto es una iniciativa personal de aprendizaje, desarrollo de software y análisis financiero.
 
-The financial and investment logic developed here is intended for analysis, tracking and experimentation. It should not automatically be interpreted as financial advice.
+Las funcionalidades relacionadas con inversiones están destinadas al seguimiento y análisis de información y no constituyen, por sí mismas, asesoramiento financiero.
