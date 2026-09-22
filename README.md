@@ -617,25 +617,7 @@ La prioridad es mantener una evolución sostenible y constante.
 
 ---
 
-# 💻 Hardware
 
-No se necesita inicialmente una computadora especializada para IA.
-
-### Mínimo recomendado
-
-* CPU moderna de 6+ núcleos
-* 16 GB RAM
-* SSD de 512 GB
-
-### Preferido
-
-* CPU moderna de gama media/alta
-* 32 GB RAM
-* SSD de 1 TB
-
-Una GPU de alta gama no es una prioridad inicial.
-
----
 
 # 🧱 Principios del proyecto
 
