@@ -4,6 +4,7 @@
 
 ---
 
+
 ## 📌 Descripción del proyecto
 
 Este proyecto nace a partir de un sistema personal de control financiero desarrollado y utilizado desde **2020**, construido inicialmente con **Excel y Power BI**.
@@ -28,6 +29,8 @@ Construir progresivamente un sistema que permita integrar:
 * Alertas
 * Automatizaciones
 * Inteligencia artificial
+
+
 
 El objetivo inicial **no es construir inmediatamente una aplicación completa**.
 
